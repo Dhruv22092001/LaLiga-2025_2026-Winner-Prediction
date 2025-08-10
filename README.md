@@ -33,33 +33,44 @@ Run the main script or Jupyter notebook to train the model and generate predicti
 
 Visualizations will be created automatically during execution.
 
-Model Details
-Algorithm: Random Forest Classifier with 200 estimators and a fixed random seed for reproducibility.
+---
 
-Features Used: pts/mp, gd, w, l, projected_pts.
+### Model Details
 
-Evaluation Metrics: Accuracy, ROC-AUC, and Log Loss, all evaluated on the 2024 test set.
+**Algorithm:** Random Forest Classifier with 200 estimators and a fixed random seed for reproducibility.
 
-Results
+**Features Used:** `pts/mp`, `gd`, `w`, `l`, `projected_pts`.
+
+**Evaluation Metrics:** Accuracy, ROC-AUC, and Log Loss, all evaluated on the 2024 test set.
+
+---
+
+### Results
+
 The model demonstrates strong predictive performance on the 2024 test data. It outputs championship win probabilities for the 2025–2026 season, based on learned historical patterns.
 
-Visualizations
+---
+
+### Visualizations
+
 Includes graphical insights such as:
 
-Top finishes by teams over seasons
+- Top finishes by teams over seasons  
+- Trends in points per match for league winners  
+- Other team performance metrics and distributions
 
-Trends in points per match for league winners
+---
 
-Other team performance metrics and distributions
+### Future Work
 
-Future Work
 Possible enhancements include:
 
-Adding more features like player statistics or injury reports
+- Adding more features like player statistics or injury reports  
+- Testing advanced models (e.g., gradient boosting, neural networks)  
+- Incorporating real-time data for dynamic predictions
 
-Testing advanced models (e.g., gradient boosting, neural networks)
+---
 
-Incorporating real-time data for dynamic predictions
+### License
 
-License
 This project is licensed under the MIT License.
