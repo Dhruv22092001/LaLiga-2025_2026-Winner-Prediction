@@ -1,30 +1,34 @@
 # LaLiga-2025_2026-Winner-Prediction
 Football league championship winner prediction using Random Forest classifier. Model trained on historical season data (2015-2023) to predict 2024 outcomes and forecast 2025-2026 season probabilities. Includes data preprocessing, feature engineering, and visualization of team performance trends.
 
-Data Description
-The dataset consists of season-wise team statistics such as:
+# LaLiga 2025-2026 Winner Prediction
 
-Points per match (pts/mp)
+**Football league championship winner prediction using a Random Forest classifier.**  
+The model is trained on historical season data (2015–2023), validated on 2024 outcomes, and used to forecast championship probabilities for the 2025–2026 season. This project includes data preprocessing, feature engineering, and visualization of team performance trends.
 
-Goal difference (gd)
+---
 
-Wins (w)
+## Project Overview
 
-Losses (l)
+This project predicts the winner of the LaLiga football league for the 2025–2026 season using a Random Forest classifier. The model learns from historical season data (2015–2023), validates predictions against the 2024 season, and forecasts the upcoming season’s championship probabilities.
 
-Ranking (rk)
+## Data Description
+
+The dataset consists of season-wise team statistics such as:  
+- Points per match (`pts/mp`)  
+- Goal difference (`gd`)  
+- Wins (`w`)  
+- Losses (`l`)  
+- Ranking (`rk`)  
 
 Feature engineering includes calculating projected points based on remaining games.
 
-How to Run
-Clone this repository.
+## How to Run
 
-Install dependencies using:
+1. Clone this repository.  
+2. Install dependencies using:  
+   pip install -r requirements.txt
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
 Run the main script or Jupyter notebook to train the model and generate predictions.
 
 Visualizations will be created automatically during execution.
