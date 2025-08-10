@@ -1,36 +1,61 @@
 # LaLiga-2025_2026-Winner-Prediction
 Football league championship winner prediction using Random Forest classifier. Model trained on historical season data (2015-2023) to predict 2024 outcomes and forecast 2025-2026 season probabilities. Includes data preprocessing, feature engineering, and visualization of team performance trends.
 
-Project Overview:
-This project predicts the winner of the LaLiga football league for the 2025-2026 season using a Random Forest classifier. The model is trained on historical season data from 2015 to 2023, validated on 2024 outcomes, and then used to forecast the next season's championship probabilities.
+Data Description
+The dataset consists of season-wise team statistics such as:
 
-Data Description:
-The dataset contains season-wise team statistics such as points per match (pts/mp), goal difference (gd), wins (w), losses (l), and ranking (rk) for multiple seasons. Data preprocessing includes feature engineering like projected points based on remaining games.
+Points per match (pts/mp)
 
-How to Run the Code:
-1] Clone the repository.
+Goal difference (gd)
 
-2] Install dependencies with pip install -r requirements.txt.
+Wins (w)
 
-3] Run the main script or notebook to train the model and generate predictions.
+Losses (l)
 
-4] Visualizations are generated automatically during execution.
+Ranking (rk)
 
-Model Details:
-Model used: Random Forest Classifier with 200 estimators and fixed random state for reproducibility.
+Feature engineering includes calculating projected points based on remaining games.
 
-Features: pts/mp, gd, w, l, projected_pts.
+How to Run
+Clone this repository.
 
-Evaluation Metrics: Accuracy, ROC-AUC, and Log Loss on the 2024 season test set.
+Install dependencies using:
 
-Results:
-The model achieved high accuracy and ROC-AUC on the 2024 test data, indicating strong predictive performance. The predicted championship probabilities for the 2025-2026 season are calculated and presented for each team based on historical trends.
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the main script or Jupyter notebook to train the model and generate predictions.
 
-Visualizations:
-The project includes visualizations showing top finishes by teams, points per match trends for champions, and other key insights from the historical data.
+Visualizations will be created automatically during execution.
 
-Future Work:
-Potential improvements include incorporating additional features like player stats, injury data, or using advanced models such as gradient boosting or neural networks.
+Model Details
+Algorithm: Random Forest Classifier with 200 estimators and a fixed random seed for reproducibility.
 
-License:
+Features Used: pts/mp, gd, w, l, projected_pts.
+
+Evaluation Metrics: Accuracy, ROC-AUC, and Log Loss, all evaluated on the 2024 test set.
+
+Results
+The model demonstrates strong predictive performance on the 2024 test data. It outputs championship win probabilities for the 2025–2026 season, based on learned historical patterns.
+
+Visualizations
+Includes graphical insights such as:
+
+Top finishes by teams over seasons
+
+Trends in points per match for league winners
+
+Other team performance metrics and distributions
+
+Future Work
+Possible enhancements include:
+
+Adding more features like player statistics or injury reports
+
+Testing advanced models (e.g., gradient boosting, neural networks)
+
+Incorporating real-time data for dynamic predictions
+
+License
 This project is licensed under the MIT License.
